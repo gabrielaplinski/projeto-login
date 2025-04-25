@@ -1,0 +1,12 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 768px) {
+    body {
+        min-height: 100vh;
+        background-image: linear-gradient(to bottom, #eb7f93, #613cbe);
+    }
+
+    section {
+        width: 80vw;
+    }: -200px;
+}

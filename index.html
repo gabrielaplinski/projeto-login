@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign in</title>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="stylesheet" href="estilos/style.css" media="all">
+    <link rel="stylesheet" href="estilos/media-query.css">
+</head>
+<body>
+    <main>
+        <section>
+            <div id="image">
+                <img src="images/pattern.jpg" alt="pattern" id="pattern">
+            </div>
+            <div id="form">
+                <h1>Sign in</h1>
+                <p id="text">Welcome back! Sign in to access your digital workspace.</p>
+                <form action="login.php" method="post" autocomplete="on">
+                    <p class="data">
+                        <label for="imail">
+                            <span class="material-symbols-outlined">person</span>
+                        </label>
+                        <input type="email" name="mail" id="imail" autocomplete="email" pattern="^[\w\.-]+@[\w\.-]+\.\w{2,}$" required>
+                    </p>
+                    <p class="data">
+                        <label for="ipass">
+                            <span class="material-symbols-outlined">key</span>
+                        </label>
+                        <input type="password" name="pass" id="ipass" autocomplete="current-password" required>
+                    </p>
+                    <div id="buttons">
+                        <button type="submit" class="botoes" id="signin">Sign in</button><br>
+                        <button type="button" class="botoes" id="forgot">Forgot my password ✉</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
