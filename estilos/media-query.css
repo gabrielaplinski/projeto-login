@@ -11,13 +11,22 @@ Grandes telas: min 1280px max 1535px
 Telas gigantes: min 1536px
 */
 
-@media screen and (min-width: 768px) and (max-width: 1023px) {
+:root {
+    --color1: #a386eb;
+    --color2: #aef3b8;
+    --color3: #6ceb7f;
+    --color4: #eb7f93;
+    --color5: #613cbe;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) { /*CONFIGURAÇÃO PARA TABLET*/
     body {
-        background-image: linear-gradient(to bottom, #eb7f93, #613cbe);
+        background-image: linear-gradient(to bottom, var(--color4), var(--color5));
     }
 
     section {
         width: 85vw;
+        height: 280px;
     }
 
     section > div#image {
@@ -30,25 +39,39 @@ Telas gigantes: min 1536px
         float: right;
         width: 70%;
     }
+
+    div#form > p#text {
+        font-size: 0.9em;
+    }
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1024px) { /*CONFIGURAÇÃO PARA TELAS GRANDES*/
     body {
-        background-image: linear-gradient(to bottom, #eb7f93, #613cbe);
+        background-image: linear-gradient(to bottom, var(--color5), var(--color4));
     }
-    
+
     section {
         width: 990px;
+        height: 320px;
     }
 
     section > div#image {
-        float: left;
+        float: right;
         width: 50%;
         height: 100%;
     }
 
     section > div#form {
-        float: right;
+        float: left;
         width: 50%;
-    }     
+    }    
+    
+    div#form > h1 {
+        font-size: 2em;
+    }
+
+    div#form > p {
+        font-size: 1.1em;
+        margin: 20px;
+    }
 }
